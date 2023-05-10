@@ -1,0 +1,166 @@
+body{
+    margin: 0%;
+    border: 0;
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: radial-gradient(#F2B279,#f28705c2,#034c8c9c,#033e8cc7);
+}
+
+/*Main*/
+
+main{
+    margin-top: 10vh;
+    height: 100%;
+    width: 80%;
+    border-radius: 40px;
+    background-color: #F2F2F2;
+}
+
+.center{
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    padding-top: 2vh;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title button{
+    width: 15%;
+    height: 50%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.title button:hover{
+    box-shadow: #F28705 0px 0px 50px 5px;
+    cursor: pointer;
+}
+
+.title h1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 1%;
+    height: 50%;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title h2{
+    margin: 0%;
+    font-size: 1vw;
+}
+
+/*botoes*/
+
+.turno{
+    padding-top: 2%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+    display: flex;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 40%;
+}
+
+.button button{
+    width: 70%;
+    height: 90%;
+    padding: 0%;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+
+.button button:hover{
+    box-shadow: #033E8C 0px 0px 100px 10px;
+    cursor: pointer;
+}
+
+.button button img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.button button a{
+    border-radius: 8px;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-decoration: none;
+    color: #F28705;
+    justify-content: center;
+    position: absolute;
+    background-image: linear-gradient(#00000044,#000000);
+}
+
+.button button a:hover{
+    background-image: linear-gradient(#000000b7,#000000);
+}
+
+.button button a h1{
+  font-size: 2vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        height: 200vh;
+    }
+
+    main{
+        width: 99%;
+        border-radius: 0%;
+    }
+
+    .title{
+        flex-direction: column;
+    }
+
+    .title button{
+        width: 70%;
+        height: 100%;
+        margin: 1%;
+        padding: 10px;
+    }
+
+    .title h1{
+        width: 50%;
+        font-size: 3vw;
+        margin: 0%;
+        text-align: center;
+    }
+
+    .title h2{
+        font-size: 3vw;
+    }
+
+    .turno{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding-top: 7vw;
+        justify-content: flex-start;
+    }
+
+    .button{
+        width: 99%;
+        height: 12%;
+    }
+}
